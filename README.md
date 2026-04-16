@@ -16,6 +16,22 @@ O projeto utiliza uma arquitetura baseada em API REST, permitindo a comunicaçã
 
 ---
 
+# 🗄️ Estrutura do sistema
+
+O sistema atualmente conta com duas entidades principais:
+
+📦 Categoria
+Responsável por classificar os produtos da farmácia.
+
+💊 Produto
+Representa os itens disponíveis para venda, vinculados a uma categoria.
+
+🔗 Relacionamento:
+- Uma categoria pode ter vários produtos
+- Um produto pertence a uma única categoria
+
+---
+
 # ⚙️ Funcionalidades atuais
 
 Atualmente, o sistema já conta com a implementação completa do módulo de Categoria, incluindo todas as operações de CRUD.
@@ -28,6 +44,14 @@ Atualmente, o sistema já conta com a implementação completa do módulo de Cat
 - 🔎 Buscar categoria por nome
 - ✏️ Atualizar categoria
 - ❌ Remover categoria
+
+💊 Produto
+- ✅ Cadastrar produto
+- 🔎 Buscar todos os produtos
+- 🔎 Buscar produto por ID
+- 🔎 Buscar produto por nome
+- ✏️ Atualizar produto
+- ❌ Remover produto
 
 Todas as rotas foram testadas utilizando o Insomnia e estão funcionando corretamente.
 
