@@ -18,15 +18,18 @@ O projeto utiliza uma arquitetura baseada em API REST, permitindo a comunicaçã
 
 # ⚙️ Funcionalidades atuais
 
-Atualmente, o projeto está em fase inicial de desenvolvimento.
+Atualmente, o sistema já conta com a implementação completa do módulo de Categoria, incluindo todas as operações de CRUD.
 
-Até o momento, foram realizadas:
+📦 Categoria
 
-- Configuração inicial do projeto com NestJS
-- Estruturação do ambiente backend
-- Organização base de pastas e arquivos
+- ✅ Cadastrar nova categoria
+- 🔎 Buscar todas as categorias
+- 🔎 Buscar categoria por ID
+- 🔎 Buscar categoria por nome
+- ✏️ Atualizar categoria
+- ❌ Remover categoria
 
-As funcionalidades de negócio serão implementadas nas próximas etapas.
+Todas as rotas foram testadas utilizando o Insomnia e estão funcionando corretamente.
 
 ---
 
@@ -62,6 +65,7 @@ Execute o projeto:
 ```bash
 npm run start:dev
 ```
+
 ---
 
 # 👩‍💻 Desenvolvido por
