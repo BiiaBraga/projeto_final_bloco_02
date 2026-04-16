@@ -15,7 +15,11 @@ export class CategoriaService { //classe de serviço
 
     // 1. metódo para encontrar todas as categorias
     async findAll(): Promise<Categoria[]>{
-        return await this.categoriaRepository.find(); 
+        return await this.categoriaRepository.find({
+            relations: {
+                produto: true
+            }
+        }); 
     }
 
     // 2. metódo para encontrar uma categoria pelo seu Id
@@ -24,6 +28,9 @@ export class CategoriaService { //classe de serviço
             where: {
                 id
             },
+            relations: {
+                produto: true
+            }
         });
 
         //verifica se a categoria existe, caso contrário, lança uma exceção
@@ -38,6 +45,9 @@ export class CategoriaService { //classe de serviço
         return await this.categoriaRepository.find({
             where: {
                 nome: ILike(`%${name}%`)
+            },
+            relations: {
+                produto: true
             }
         });
     }
